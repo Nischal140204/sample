@@ -240,3 +240,84 @@ enables rapid and reliable software updates, eliminating dependency on scheduled
 allows organizations to roll out new features swiftly and adapt to evolving market demands.
 However, strong monitoring systems and rollback plans are essential to manage potential risks in
 production environments. 
+
+
+MODULE 2
+1. What role do version control systems play in software development?
+Version Control Systems (VCS) play a vital role in software development by managing code
+changes, enabling team collaboration, and keeping a record of all modifications. They allow
+multiple developers to work on the same project simultaneously while avoiding conflicts and
+ensuring traceability of changes. VCS also offers protection for the code, allowing for recovery
+and rollback when needed. There are two main categories:
+Centralized Version Control Systems (CVCS): All code versions are stored in a single central
+repository, and developers must connect to it for access (e.g., SVN).
+Distributed Version Control Systems (DVCS): Each developer has a full local copy of the
+repository, which allows for offline work and faster collaboration (e.g., Git).
+Adopting VCS enhances team coordination, facilitates auditing, and minimizes the risk of data
+loss. Tools like Git, Mercurial, and SVN are widely utilized across different industries.
+2. Write a Note on Any Three Git Commands
+- git clone <repository_url> – This command creates a copy of a remote repository on a local
+machine. It enables developers to quickly begin working on a project without having to manually
+download individual files. Cloning ensures that the complete version history is available, allowing
+for easy modification, committing, and synchronization with the remote repository.
+- git commit -m "message" – This command records changes in the local repository with a message
+that describes the updates. Commits serve as milestones, making it easier to monitor progress and
+undo changes when necessary. Using clear and descriptive commit messages fosters better
+teamwork and understanding of code changes.
+- git pull origin <branch_name> – This command retrieves and merges the most recent changes
+from a remote repository into your local branch. Frequently pulling updates helps avoid merge
+conflicts and ensures that your local codebase stays up to date with changes made by other team
+members.
+3. Write a Note on Git Workflow Including Remote Repository
+Git workflow is a methodical approach that development teams follow to handle code changes
+effectively. It streamlines collaboration, code review processes, and the integration of updates. A
+typical Git workflow involves these steps:
+ Clone the repository using git clone <repo_url>.
+ Create a new feature branch with git checkout -b <branch_name>.
+ Make necessary changes and stage them with git add.
+ Record changes in the local repository with git commit -m "message".
+ Push the changes to the remote repository using git push origin <branch_name>.
+ Create a pull request for code review and merge the changes into the main branch.
+Remote repositories like GitHub, GitLab, and Bitbucket facilitate collaboration by allowing
+multiple developers to contribute, review, and merge code efficiently. A clear and consistent Git
+workflow helps reduce conflicts and ensures a well-organized development process.
+4. Write a Note on the Need for Branching and Various Branching Strategies
+Branching is a crucial practice in software development, allowing developers to work on new
+features, bug fixes, or experiments without affecting the main codebase. It enables parallel
+development and keeps experimental or unstable code isolated from production-ready versions.
+Branching also improves collaboration, simplifies testing, and provides the option for rollback
+when needed.
+Common Branching Strategies:
+ Feature Branching – Developers create individual branches for each feature, merging
+them into the main branch once they are finished.
+ Git Flow – A more organized workflow that involves separate branches for development,
+releases, and hotfixes, making it well-suited for complex projects.
+ GitHub Flow – A more straightforward approach where developers make changes in
+branches and merge them into the main branch via pull requests.
+ Trunk-Based Development – Developers work directly on the main branch, using shortlived branches for rapid testing and experimentation.
+Choosing the right branching strategy depends on factors such as project complexity, team size,
+and release frequency. A well-structured branching strategy improves development efficiency and
+promotes effective collaboration.
+Selecting an appropriate branching strategy depends on project complexity, team size, and release
+frequency. Proper branching structures enhance development efficiency and collaboration.
+5. Different Types of Source Code Management (SCM) Tools
+Source Code Management (SCM) tools enable developers to efficiently track, manage, and
+collaborate on code. These tools allow multiple contributors to work simultaneously without
+causing conflicts while keeping a complete record of all changes made. SCM tools are
+categorized as follows:
+ Centralized Version Control Systems (CVCS) – A central repository manages all code
+versions, with developers connecting to it to access the code (e.g., Apache Subversion -
+SVN).
+ Distributed Version Control Systems (DVCS) – Each developer has a full copy of the
+repository locally, supporting offline work and improving collaboration (e.g., Git,
+Mercurial).
+ Cloud-Based SCM Tools – These platforms host repositories online and include
+additional features like pull requests, issue tracking, and CI/CD integrations (e.g.,
+GitHub, GitLab, Bitbucket).
+Two Popular SCM Tools:
+ Git – A widely adopted distributed version control system that helps teams track changes,
+collaborate seamlessly, and manage multiple branches.
+ GitHub – A cloud-based service that hosts Git repositories and offers extra features like
+pull requests, issue tracking, and integrations with DevOps tools.
+SCM tools optimize development workflows, foster better collaboration, and maintain software
+integrity throughout the development process. 
